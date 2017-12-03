@@ -1,0 +1,81 @@
+.cont {
+    width: 600px;
+    display: inline-block;
+    margin: 0 15px;
+}
+.cont2 {
+    width: 300px;
+    display: inline-block;
+    margin: 0 15px;
+}
+.cont3 {
+    width: 150px;
+    display: inline-block;
+    margin: 0 15px;
+}
+.cont4 {
+    width: 50px;
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.meter-container {
+    width: 100%;
+}
+
+.meter-container .meter-body {
+    position: relative;
+    width: 100%;
+}
+
+.meter-container .meter-body .meter-mean-value {
+    margin: auto;
+    text-align: center;
+}
+
+.meter-container .meter-body .meter-display {
+    text-align: center;
+}
+
+.meter-container .meter-body .meter-scale {
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.meter-container .meter-body .meter-scale svg g {
+    fill: #d2d8de;
+}
+
+.meter-container .meter-body .meter-scale svg g .active {
+    fill: #0a8eff;
+}
+
+.meter-container.cold-hot .meter-body .meter-scale svg g .active.fill-24 {fill:#277BE0}
+.meter-container.cold-hot .meter-body .meter-scale svg g .active.fill-25 {fill:#3870CE}
+.meter-container.cold-hot .meter-body .meter-scale svg g .active.fill-26 {fill:#436DC6}
+.meter-container.cold-hot .meter-body .meter-scale svg g .active.fill-27 {fill:#6254A1}
+.meter-container.cold-hot .meter-body .meter-scale svg g .active.fill-28 {fill:#6D4C95}
+.meter-container.cold-hot .meter-body .meter-scale svg g .active.fill-29 {fill:#7D4284}
+.meter-container.cold-hot .meter-body .meter-scale svg g .active.fill-30 {fill:#923A73}
+.meter-container.cold-hot .meter-body .meter-scale svg g .active.fill-31 {fill:#AD2E5B}
+.meter-container.cold-hot .meter-body .meter-scale svg g .active.fill-32 {fill:#B91B44}
+.meter-container.cold-hot .meter-body .meter-scale svg g .active.fill-33 {fill:#C4183C}
+.meter-container.cold-hot .meter-body .meter-scale svg g .active.fill-34 {fill:#D22945}
+.meter-container.cold-hot .meter-body .meter-scale svg g .active.fill-35 {fill:#DE2A40}
+
+.meter-container.cold-hot .meter-body .meter-scale svg g .active.fill-36,
+.meter-container.cold-hot .meter-body .meter-scale svg g .active.fill-37,
+.meter-container.cold-hot .meter-body .meter-scale svg g .active.fill-38,
+.meter-container.cold-hot .meter-body .meter-scale svg g .active.fill-39,
+.meter-container.cold-hot .meter-body .meter-scale svg g .active.fill-40,
+.meter-container.cold-hot .meter-body .meter-scale svg g .active.fill-41,
+.meter-container.cold-hot .meter-body .meter-scale svg g .active.fill-42,
+.meter-container.cold-hot .meter-body .meter-scale svg g .active.fill-43,
+.meter-container.cold-hot .meter-body .meter-scale svg g .active.fill-44,
+.meter-container.cold-hot .meter-body .meter-scale svg g .active.fill-45,
+.meter-container.cold-hot .meter-body .meter-scale svg g .active.fill-46,
+.meter-container.cold-hot .meter-body .meter-scale svg g .active.fill-47,
+.meter-container.cold-hot .meter-body .meter-scale svg g .active.fill-48,
+.meter-container.cold-hot .meter-body .meter-scale svg g .active.fill-49,
+.meter-container.cold-hot .meter-body .meter-scale svg g .active.fill-50 {fill:#E10019}

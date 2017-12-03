@@ -38,8 +38,7 @@ class HomePage extends React.Component {
                        value={this.state.value}
                        minValue={this.state.min}
                        maxValue={this.state.max}
-                       meanValue={this.state.mean}
-                       containerClass="cold-hot" />
+                       meanValue={this.state.mean} />
                 </div>
                 <div className="cont3">
                     <MeterAdoptiveContainer
@@ -54,8 +53,7 @@ class HomePage extends React.Component {
                        value={this.state.value}
                        minValue={this.state.min}
                        maxValue={this.state.max}
-                       meanValue={this.state.mean}
-                       containerClass="cold-hot" />
+                       meanValue={this.state.mean} />
                 </div>
             </div>
         );

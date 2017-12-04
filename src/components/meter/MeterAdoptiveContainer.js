@@ -20,8 +20,15 @@ class MeterAdoptiveContainer extends React.Component {
   }
 
   setWidth() {
+    let width = this.divRef.clientWidth;
+
+    if (!width && document.body.getBoundingClientRect) {
+      let rect = document.body.getBoundingClientRect();
+      width = rect.right - rect.left;
+    }
+
     this.setState({
-      width: this.divRef.clientWidth,
+      width: width,
       displayMeter: true
     });
   }

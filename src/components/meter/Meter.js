@@ -151,11 +151,17 @@ class Meter extends React.Component {
       height: this.props.width
     };
 
+    /* Fix IE issue */
+    let svgStyle = {
+      width: this.props.width,
+      height: this.props.width
+    };
+
     return (
       <div className={'meter-container ' + this.props.containerClass}>
         <div className="meter-body" style={scaleStyle}>
           <div className="meter-scale">
-            <svg xmlns="http://www.w3.org/2000/svg" version="1.0" viewBox="0 0 660 660">
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.0" viewBox="0 0 660 660" style={svgStyle}>
               <g className="scale">
                 {this.transform.scale.map(
                   (value, index) => {

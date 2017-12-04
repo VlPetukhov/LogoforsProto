@@ -17,7 +17,7 @@ class HomePage extends React.Component {
             value: Math.round((prevState.max - prevState.min) * Math.random())
         };
       });
-    }, 2000);
+    }, 1500);
   }
     render() {
         return (

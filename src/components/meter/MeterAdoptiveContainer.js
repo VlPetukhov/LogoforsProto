@@ -15,22 +15,30 @@ class MeterAdoptiveContainer extends React.Component {
   }
 
   componentDidMount() {
+    window.console.log('Component were mounted');
     this.setWidth();
     window.addEventListener('resize', this.setWidth);
   }
 
+  componentWillUpdate() {
+    window.console.log('component will update');
+  }
+
+  componentWillUnmount() {
+    this.setDivRef = null;
+    window.removeEventListener('resize', this.setWidth);
+    window.console.log('Component were UN mounted');
+  }
+
   setWidth() {
-    let width = this.divRef.clientWidth;
+    let width = this.divRef ? this.divRef.clientWidth : 0;
 
-    if (!width && document.body.getBoundingClientRect) {
-      let rect = document.body.getBoundingClientRect();
-      width = rect.right - rect.left;
+    if (width) {
+      this.setState({
+        width: width,
+        displayMeter: true
+      });
     }
-
-    this.setState({
-      width: width,
-      displayMeter: true
-    });
   }
 
   setDivRef(element) {

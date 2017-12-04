@@ -147,9 +147,13 @@ class Meter extends React.Component {
         fontSize: Math.round(0.18 * this.props.width)
     };
 
+    let scaleStyle = {
+      height: this.props.width
+    };
+
     return (
       <div className={'meter-container ' + this.props.containerClass}>
-        <div className="meter-body">
+        <div className="meter-body" style={scaleStyle}>
           <div className="meter-scale">
             <svg xmlns="http://www.w3.org/2000/svg" version="1.0" viewBox="0 0 660 660">
               <g className="scale">
@@ -190,7 +194,11 @@ Meter.propTypes = {
   value: PropTypes.number.isRequired,
   maxValue: PropTypes.number.isRequired,
   minValue: PropTypes.number.isRequired,
-  meanValue: PropTypes.number.isRequired
+  meanValue: PropTypes.number.isRequired,
+  elementWidth: PropTypes.number,
+  elementHeight: PropTypes.number,
+  elementRx: PropTypes.number,
+  elementRy: PropTypes.number
 };
 
 export default  Meter;
